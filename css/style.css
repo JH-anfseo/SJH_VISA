@@ -1,0 +1,336 @@
+@charset "uft-8";
+
+.mobile {display: none;}
+
+/*header*/
+header {width: 100%; background: #172274; position: fixed; z-index: 999999;}
+nav {width: 1200px; height: 80px;  margin: 0 auto; }
+nav .logo{width: 120px; margin: 10px; padding: 10px; display: inline-block; float: left;}
+nav .logo img{width: 100%;}
+nav .gnb li > ul { width: 100%; height: 60px; display: none; position: absolute; top: 80px; left: 0; background: #fff; border-bottom: 5px solid  #fcb70a;}
+nav .gnb li > ul > li{width: 100px;float: left; padding-top: 15px; height: 100%;}
+nav .gnb li > ul > li:nth-child(1){margin-left: 55%;}
+nav .gnb li > ul > li a{text-align: center; font-size: 16px; color: #172274; font-weight: 500;}
+nav .gnb > li > ul.on{display: block;}
+nav .gnb {float: right; height: 100%;}
+nav .gnb > li{float: left; font-size: 16px; color: #fff; margin: 15px 15px ; cursor: pointer; padding: 10px;}
+nav .gnb > li:nth-child(3){margin: 20px 15px;}
+nav .search {font-size: 30px; color: #fcb70a; border-left: 1px solid #fff; padding: 0 20px; float: right; margin-top: 20px;}
+
+/*main*/
+.main_bg {height: 800px; background: url(../img/main_bg_w.jpg) center / cover; color: #222;}
+.main_bg h3 {font-size: 36px; text-align: center; padding-top: 310px; opacity: 0.5}
+.main_bg h1 {font-size: 72px; text-align: center; opacity: 0.3;}
+
+.quick_menu {width: 100%; height: 110px; background: #172274;}
+.quick_menu ul {width: 900px; height: 85%; overflow: hidden; margin: 0 auto;}
+.quick_menu ul li {float: left; width: 250px; height: 100%; padding: 0 15px; border-right: 2px solid #fcb70a; margin: 25px 0; text-align: center;}
+.quick_menu ul li a{color: #fff; font-size: 18px; transition: all 0.2s;}
+.quick_menu ul li i{display: block; font-size: 30px; margin-bottom: 8px;}
+.quick_menu ul li:last-child {border: none;}
+.quick_menu ul li:hover a{color: #fcb70a; }
+
+.benefit {width: 1200px; margin: 30px auto;}
+.benefit h3, .benefit h4{text-align: center;}
+.benefit h3 {font-size: 40px; font-weight: 500; }
+.benefit h4 {font-size: 16px; font-weight: 300; color: #172274; margin: 10px 0;}
+.benefit  a{width: 70%; display: block; margin: 20px auto; background: #172274; text-align: center; color: #fff; height: 40px; font-size: 18px; font-weight: 600; padding-top: 15px;}
+.benefit .benefit_on ul {overflow: hidden;}
+.benefit .benefit_on ul li {float: left; width: 31%; height: 250px; margin: 10px 10px;}
+.benefit .benefit_off ul {overflow: hidden;}
+.benefit .benefit_off ul li {float: left; width: 31%; height: 250px; margin: 20px 10px; overflow: hidden;}
+.benefit .benefit_on h3, .benefit .benefit_off h3{font-size: 28px; margin: 50px 0 15px; font-size: 200;}
+.benefit .benefit_off ul li:nth-child(1) {background: url(../img/main_benefit_off1.jpg)center /cover ;}
+.benefit .benefit_off ul li:nth-child(2) {background: url(../img/main_benefit_off2.jpg)center /cover }
+.benefit .benefit_off ul li:nth-child(3) {background: url(../img/main_benefit_off3.jpg)center /cover }
+.benefit .benefit_on ul li:nth-child(1) {background: url(../img/main_benefit_on1.jpg)center /cover }
+.benefit .benefit_on ul li:nth-child(2) {background: url(../img/main_benefit_on2.jpg)center /cover }
+.benefit .benefit_on ul li:nth-child(3) {background: url(../img/main_benefit_on3.jpg)center /cover }
+.benefit .mask p {width: 80%; margin: 0 auto; font-size: 16px;}
+.benefit .mask .mask_title {color: #172274; font-size: 20px; font-weight: 500; padding-top: 20px;}
+.benefit .mask { background: rgba(252, 183, 10,0.9); transition: all 0.2s; transform: translateY(150px); height: 200px; color: #fff; display: block;}
+.benefit li:hover .mask{background: #fcb70a; transform: translateY(100px);}
+
+.travel_visa {width: 100%; margin: 100px 0; position: relative; overflow: hidden;}
+.travel_visa h3{font-size: 40px; text-align: center; font-weight: 500; margin: 20px 0;}
+.travel_visa .travel_slide {position: relative; height: 500px; }
+.travel_visa .travel_slide li{position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: all 0.2s; }
+.travel_visa .travel_slide li >a{display: block; }
+.travel_visa .travel_slide li h2{text-align: center; font-size: 60px; color: #fff; padding-top: 130px;}
+.travel_visa .travel_slide li p{text-align: center; font-size: 18px; color: #eee;}
+.travel_visa .travel_slide li .travel_button{width: 100px; margin: 20px auto; font-size: 20px; color: #fff; background: transparent; border: 2px solid #fff; padding: 10px 30px; font-weight: 500; transition: all 0.3s;}
+.travel_visa .travel_slide li:nth-child(1){background: url(../img/main_traveltai.jpg) center/ cover;}
+.travel_visa .travel_slide li:nth-child(1):hover{background: url(../img/main_traveltai_black.jpg) center/ cover;}
+.travel_visa .travel_slide li:nth-child(2){background: url(../img/main_travelhk.jpg) center/ cover;}
+.travel_visa .travel_slide li:nth-child(2):hover{background: url(../img/main_travelhk_black.jpg) center/ cover;}
+.travel_visa .travel_slide li:nth-child(3){background: url(../img/main_travelKR.jpg) center/ cover;}
+.travel_visa .travel_slide li:nth-child(3):hover{background: url(../img/main_travelKR_black.jpg) center/ cover;}
+.travel_visa .indicator{position: absolute; left: 0; bottom: 20px; width: 100%; text-align: center;}
+.travel_visa .indicator li{display: inline-block; padding-left: 10px;}
+.travel_visa .indicator li a{display: block; width: 50px; height: 8px; border: 2px solid #fcb70a; overflow: hidden; text-indent: -999px;}
+.travel_visa .indicator li.on a{background: #fcb70a;}
+
+.visa_company {width: 55%; overflow: hidden; margin: 0 auto 70px;}
+.visa_company .company_txt{width: 50%; float: left; height: 220px; margin-right: 10px;}
+.visa_company .company_txt h1{ font-size: 30px; color: #172274;}
+.visa_company .company_txt p{width: 90%; font-size: 18px; color: #888; margin: 20px 0;}
+.visa_company .company_txt a{ color: #fff; background: #172274; padding: 10px 30px; }
+.visa_company img{width: 48%; float: right;}
+
+/*footer*/
+footer {width: 100%; margin: 0 auto; background: #eee;}
+footer .footer_top{width: 800px; height: 300px; margin: 0 auto; padding-top: 40px;  text-align: center;}
+footer .footer_top div{width: 32%; float: left; font-size: 18px;}
+footer .footer_top h2 {font-size: 30px; margin: 10px 0; color: #333; font-weight: 400;}
+
+footer .visa_inc li{border-top: 1px solid #ccc; width: 85%; margin: 20px auto; padding: 5px 0; }
+footer .resource li{border-top: 1px solid #ccc; width: 85%; margin: 20px auto; padding: 5px 0; }
+footer .sns {overflow: hidden;}
+footer .sns li{float: left; width: 25%; font-size: 30px; margin: 25px 10px;}
+
+footer .footer_lang {position: relative; font-size: 18px; color: #222; margin-left: 20px; margin-top: 50px;}
+footer .footer_lang a{display: block; height: 25px;}
+footer .footer_lang i{padding-left: 10px;}
+footer .footer_lang .lang_list{border: 1px solid #ccc; background: #eee; position: absolute; left: 0; top: 42px; width: 200px; box-sizing: border-box;  display: none;}
+footer .footer_lang .lang_list li{border-bottom: 1px solid #ccc; padding: 5px 0;}
+footer .footer_lang .lang_list li a{ color: #333;}
+footer .footer_lang .lang_list li:hover{background: #172274;}
+footer .footer_lang .lang_list li:hover a{color: #fff;}
+footer .footer_lang .lang_list li:last-child{border: none;}
+footer .footer_lang .lang_list.on{display: block;}
+footer .footer_lang .lang{width: 200px; border: 1px solid #888; text-align: center; padding-top: 5px;}
+footer .footer_lang .lang a{padding: 5px 30px; color: #222;}
+footer .copyimg{width: 250px; margin: 0 auto;}
+footer .copyimg img{width: 100%;}
+footer .copyright {text-align: center; font-size: 20px; color: #ccc; padding: 20px 0;}
+
+
+/*sub1-1*/
+.card_bg {width: 100%; height: 500px; text-align: center; background: url(../img/sub1/main_bg.jpg) bottom / cover; color: #fff;}
+.card_bg h3{padding-top: 230px; font-size: 40px;}
+.card_bg p{padding: 5px 0; font-size: 14px;}
+.checkcard_txt {width: 100%; height: 300px; text-align: center; background: #fcb70a; color: #172274; margin-bottom: 100px;}
+.checkcard_txt h3{padding-top: 80px; font-size: 40px;}
+.checkcard_txt p{padding: 5px 0; font-size: 14px;}
+
+.card_list {width: 800px;  margin: 50px auto; position: relative;}
+.card_box {position: relative; overflow: hidden; height: 350px;}
+.card_box ul {position: absolute; left: 0 ; top: 0; width: 1800px;}
+.card_box ul li{float: left; padding: 5px 0; margin: 0 10px; width: 320px;}
+.card_box ul li p{font-size: 14px; width: 90%; margin: 0 auto; text-align: center;}
+.card_box ul li .card_title{ font-size: 20px;  margin: 10px 0;}
+.card_box ul li img{width: 320px; }
+.control .con_R {position: absolute; top: 100px; right: -150px;}
+.control .con_L {position: absolute; top: 100px; left: -150px;}
+.control img{width: 100px;}
+
+/*sub1-2*/
+.tech_bg {width: 100%; position: relative; padding-top: 120px; }
+.tech_bg .tech_title{width: 1000px; margin: 0 auto; height: 500px; overflow: hidden;}
+.tech_bg .tech_title li{width: 100%; float: left; display: none; height: 100%;}
+.tech_bg .tech_title li h4{font-size: 44px; color: #fff; padding: 180px 0 5px 50px;}
+.tech_bg .tech_title li p{font-size: 18px; color: #eee; padding-left: 50px;}
+.tech_bg .tech_title li:nth-child(1){display: block; background: url(../img/sub1/sub1-2-main1.jpg) center /cover;}
+.tech_bg .tech_title li:nth-child(2){background: url(../img/sub1/sub1-2-main2.jpg) center /cover;}
+.tech_bg .tech_title li:nth-child(3){background: url(../img/sub1/sub1-2-main3.jpg) center /cover;}
+.tech_indicator{position: absolute; bottom: -80px; overflow: hidden; left: 50%; transform: translateX(-50%); width: 600px;}
+.tech_indicator li{float: left; width: 170px; margin: 0 5px;}
+.tech_indicator li a{color: #172274; font-weight: 500; font-size: 18px; border: 2px solid #172274; display: block; padding: 8px 20px; text-align: center;}
+.tech_txt {width: 100%; margin: 0 auto; padding-top: 150px;}
+.tech_txt h3{font-size: 30px; text-align: center;}
+.tech_txt h4{font-size: 16px; text-align: center; margin: 10px 0;}
+.tech_txt ul{overflow: hidden; width: 1200px; margin: 30px auto;}
+.tech_txt li{float: left; width: 43%; margin: 20px; height: 450px;}
+.tech_txt li h4{font-size: 20px; border-bottom: 1px solid #999; padding: 5px 0;}
+.tech_txt li p{font-size: 14px; padding: 5px 0;}
+.tech_txt li img{width: 100%;}
+
+/*sub2-1*/
+.partready_main {width: 100%; height: 500px; text-align: center; background: url(../img/sub2/visa-ready-1600x900.jpg)center / cover; color: #fff;}
+.partready_main h3{padding-top: 230px; font-size: 40px;}
+.partready_main p{padding: 5px 0; font-size: 14px;}
+.partready_txt {width: 100%; margin: 40px 0; color: #172274;}
+.partready_txt h1{font-size: 50px; text-align: center; margin: 5px 0; font-weight: 400; }
+.partready_txt p{font-size: 16px; text-align: center; }
+.partready_menu {margin: 70px 0; }
+.partready_menu .partready_menuin{width: 85%; margin: 0 auto; overflow: hidden;}
+.partready_menu .partready_menuin li{float: left; width: 43%; margin: 20px; height: 350px; text-align: center; font-size: 14px; color: #777}
+.partready_menu .partready_menuin h3{font-size: 16px; color: #777; margin: 5px 0; }
+.partready_menu .partready_menuin strong{font-size: 20px; color: #172274; margin: 5px 0;}
+.partready_menu .partready_menuin li img{width: 110px;}
+
+.pratready_sol {width: 80%; margin: 0 auto;}
+.pratready_sol h1{font-size: 50px; text-align: center; margin: 5px 0; font-weight: 400;}
+.pratready_sol h3{font-size: 18px; text-align: center; margin: 10px 0; font-weight: 300;}
+.pratready_sol a{width: 80%; background: #172274; display: block; color: #fff; text-align: center; padding: 15px 0; margin: 0 auto;}
+.partready_mask {display: none;}
+.partready_mask p{font-size: 18px; color: #172274; text-align: center; margin: 30px 0;}
+.partready_maskimg{width: 100%; height: 200px; overflow: hidden;}
+.partready_maskimg img{width: 100%; }
+.partready_mask ul{overflow: hidden; margin: 20px 0;}
+.partready_mask ul li{float: left; width: 18%; height: 70px; font-size: 14px; padding: 10px 5px 0; border-right: 2px solid #eee; text-align: center;}
+.partready_mask ul li:last-child{border: none;}
+
+
+/*sub3*/
+.sub_TR_main {width: 100%; height: 800px; background: url(../img/sub3/bg.jpg)center/ cover;  background-attachment: fixed;}
+.travel_menu {width: 1050px; height: 700px; overflow: hidden; margin: 0 auto; padding-top: 100px; position: relative;}
+.travel_menu_box { position: relative; width: 400px; height: 450px;  background: #eee; float: right; margin: 30px; overflow: hidden;}
+.travel_menu_box ul{position: absolute; left: 0; top: 0; width: 100%; height: 100%; text-align: center;}
+.travel_menu_box ul li{position: absolute; left: 0; top: 30px; width: 100%; height: 100%; display: none;}
+.travel_menu_box ul li h3{font-size: 28px; margin: 5px 0;}
+.travel_menu_box ul li p{width: 80%; margin: 10px auto;}
+
+.travelmenu_indicator {position: absolute; bottom: 150px; right: 100px; }
+.travelmenu_indicator ul {overflow: hidden; width: 250px;}
+.travelmenu_indicator ul li{float: left; width: 70px; margin: 0 5px; cursor: pointer;}
+.travelmenu_indicator ul li a{color: #ccc; text-align: center; display: block;}
+.travelmenu_indicator ul li.on a{font-weight: bold; padding-bottom: 10px; border-bottom: 2px solid #fff;}
+
+.trabvelmenu_arrow {position: absolute; top: 140px; width: 100%; }
+.trabvelmenu_arrow a{width: 35px; height: 60px; display: inline-block;}
+.trabvelmenu_arrow a.arr_L{position: absolute; left: 30px;}
+.trabvelmenu_arrow a.arr_R{position: absolute; right: 30px;}
+.trabvelmenu_arrow a img{width: 100%; height: 100%;}
+
+.tralvelmenu_body {width: 550px; float: left; margin: 20px; position: relative; height: 100%;}
+.tralvelmenu_body .tra_BD{position: absolute; top: 20%; display: none; color: #eee; text-align: right;}
+.tralvelmenu_body .tra_BD h3{font-size: 24px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid #eee; display: inline-block;}
+.tralvelmenu_body .tra_BD p{font-size: 15px; font-weight: 200; line-height: 25px; margin: 15px 0;}
+.tralvelmenu_body .tra_BD.on {display: block;}
+
+.TP_menu {width: 100%;  height: 100px; }
+.TP_menu ul{width: 800px; margin: 0 auto; overflow: hidden;}
+.TP_menu ul li{ text-align: center;  float: left; width: 20%; margin: 10px 5px; padding:  0 10px; border-right: 1px solid #666;}
+.TP_menu ul li a{ font-size: 24px; font-size: 18px; color: #666; }
+.TP_menu ul li:last-child {border: none; padding: 5px 10px;}
+
+.TP_M {width: 100%; height: 500px; margin: 80px 0;}
+.TP_M h3 {font-size: 24px; text-align: center; margin: 10px 0;}
+.TP_M p {font-size: 16px; text-align: center;}
+.TP_M table {width: 800px; margin: 70px auto; height: 70px; text-align: center;}
+.TP_M table thead{border-bottom: 1px solid #666; }
+.TP_M ul {overflow: hidden; width: 1000px; margin: 0 auto;}
+.TP_M ul li{float: left; width: 22%; padding: 0 5px; margin: 0 5px; text-align: center; border-left: 1px solid #555;}
+.TP_M ul li:first-child {border: none;}
+.TP_M ul li img{width: 100px; margin: 10px;}
+
+.TP_PM {width: 1400px; margin: 30px auto; position: relative;}
+.TP_PM h3{font-size: 30px; text-align: center; margin: 10px 0;}
+.TP_PM select{width: 400px; height: 50px; position: absolute; top: 80px; left: 50%; transform: translateX(-50%); font-size: 16px; padding: 0 20px; font-size: 20px;}
+.TP_PM ul {width: 100%; overflow-y: scroll; height: 400px; margin-top: 100px;}
+.TP_PM ul li .mask {text-align: center; position: absolute; bottom: 0; width: 100%; height: 70px; background: rgba(255, 255, 255,0.7); padding-top: 10px;}
+.TP_PM ul li .mask h4{font-size: 20px;}
+.TP_PM ul li{float: left; height: 300px;  margin: 10px 5px; position: relative;}
+.TP_PM ul li:nth-child(1){width: 61%; background: url(../img/sub3/TP_PM1.jpg)center/ cover;}
+.TP_PM ul li:nth-child(2){width: 35%; background: url(../img/sub3/TP_PM2.jpg)center/ cover;}
+.TP_PM ul li:nth-child(3){width: 30%; background: url(../img/sub3/TP_PM3.jpg)center/ cover;}
+.TP_PM ul li:nth-child(4){width: 35%; background: url(../img/sub3/TP_PM4.jpg)center/ cover;}
+.TP_PM ul li:nth-child(5){width: 30%; background: url(../img/sub3/TP_PM5.jpg)center/ cover;}
+
+.TP_HP {height: 300px; background: #172274; margin: 50px 0; }
+.TP_HP .TP_HPtxt{width: 1000px; margin: 10px auto; padding: 20px 0; position: relative; color: #eee;}
+.TP_HP h3{font-size: 30px; text-align: center; padding: 10px 0;}
+.TP_HP h4{font-size: 18px; text-align: center;}
+.TP_HP p{font-size: 16px; text-align: center; padding: 20px 0;}
+.TP_HP a{font-size: 16px; font-weight: 500; padding: 10px 20px; background: #fff; color: #fcb70a; margin: 10px auto; position: absolute; left: 50%; transform: translateX(-50%);}
+
+.TP_ATM {width: 800px; margin: 0 auto 50px; overflow: hidden;}
+.TP_ATM h3{font-size: 30px; text-align: center; margin: 20px;}
+.TP_ATM .TP_ATM_txt{float: right; width: 370px; text-align: center; margin-left: 30px;}
+.TP_ATM .TP_ATM_txt h4{padding: 10px 0; font-size: 20px;}
+.TP_ATM .TP_ATM_txt p{padding: 5px 0; font-size: 16px; margin-bottom: 30px;}
+.TP_ATM .TP_ATM_txt a{padding: 10px 25px; font-size: 16px; border: 2px solid #172274; color: #172274; font-weight: 500;}
+
+/*sub4-1*/
+.Visa_bg {width: 100%; padding-top: 120px; position: relative;}
+.visa_bg-main {width: 1000px;height: 500px; margin: 0 auto;}
+.visa_bg-main li{width: 100%; float: left; height: 100%;}
+.visa_bg-main li:nth-child(1){background: url(../img/sub4/sub4_create-main.jpg) center / cover;}
+.visa_bg-main li h4, .visa_bg-main li p {color: #fff; text-align: center;}
+.visa_bg-main li h4 {padding-top: 180px; font-size: 44px;}
+.visa_bg-main li p {font-size: 18px; color: #eee; padding-left: 50px;}
+.Visa_bg .tech_indicator {width: 360px;}
+.vs_wel {margin-top: 200px; height: 1600px;}
+.vs_wel h1 {font-size: 44px; text-align: center; font-weight: 500;}
+.visa_welcome_ul {overflow: hidden; width: 800px; margin: 50px auto;}
+.visa_welcome_ul li{float: left; width: 29%; padding: 0 15px; border-right: 1px solid #172274}
+.visa_welcome_ul li:last-child {border: none;}
+.visa_welcome_ul li h4{font-size: 24px; text-align: center; color: #172274; padding: 15px 0;}
+
+.Visa_center {width: 100%;  margin: 100px 0;}
+.Visa_center ul{width: 1200px; overflow: hidden; margin: 10px auto; color: #fff;}
+.Visa_center ul li{float: left; height: 300px;}
+.Visa_center ul li h3{font-size: 24px; padding: 30px 0 0 20px;}
+.Visa_center ul li p{font-size: 16px; padding: 15px 15px 0 20px;}
+.Visa_center ul li:nth-child(1){width: 50%; background: url(../img/sub4/innovation-center-senpran.jpg)center/ cover;}
+.Visa_center ul li:nth-child(2){width: 20%; background: url(../img/sub4/innovation-center-dubai.jpg)center/ cover;}
+.Visa_center ul li:nth-child(3){width: 30%; background: url(../img/sub4/innovation-center-sin.jpg)center/ cover;}
+.Visa_center ul li:nth-child(4){width: 60%; background: url(../img/sub4/innovation-center-mai.jpg)center/ cover;}
+.Visa_center ul li:nth-child(5){width: 40%; background: url(../img/sub4/innovationcenter-london.jpg)center/ cover;}
+
+.Visa_tgt {width: 700px; margin: 0 auto; padding-bottom: 50px; border-bottom: 2px solid #888;}
+.Visa_tgt h1{margin-bottom: 40px}
+.Visa_tgt form div {margin: 20px auto; text-align: center;}
+.Visa_tgt form div p{font-size: 20px; font-weight: 300;}
+.Visa_tgt form .id input{width: 330px; height: 30px;}
+.Visa_tgt form .password input{width: 245px; height: 30px;}
+.Visa_tgt form .email input{width: 145px; height: 30px;}
+.Visa_tgt form .visit input{margin: 5px; }
+.Visa_tgt form select {width: 130px; height: 35px; font-size: 16px;}
+.Visa_tgt form .form_btn {width: 220px; height: 40px; font-size: 18px; border: none; background: #172274; color: #fff; margin: 0 35%;}
+
+.vs_cr {width: 100%; height: 500px; margin: 60px auto ;}
+.vs_cr .vs_crtxt h3{text-align: center; font-size: 36px;}
+.vs_cr .vs_crtxt h4{text-align: center; font-size: 20px;margin-bottom: 10px;}
+.visa_cr_fl {width: 1200px; height: 400px; overflow: hidden; margin: 0 auto;}
+.visa_cr_fl h4{padding: 10px 10px 0; font-size: 30px;}
+.visa_cr_fl p{padding: 5px 10px; font-size: 18px; }
+.visa_cr_ul {float: left; width: 70%; }
+.visa_cr_ul ul{overflow: hidden; width: 100%;}
+.visa_cr_ul li{float: left; height: 180px; position: relative;}
+.visa_cr_ul li:nth-child(1){width: 100%; background: url(../img/sub4/sub4_create-li1.jpg) center bottom /cover; color: #172274; text-align: right;}
+.visa_cr_ul li:nth-child(2){width: 55%; background: #172274; color: #fff;}
+.visa_cr_ul li:nth-child(3){width: 45%; background: url(../img/sub4/sub4_create-li4.jpg) center / cover; color: #fff;}
+.visa_cr_sev {float: left; width: 30%; height: 100%;}
+.visa_sev_in { background: url(../img/sub4/sub4_create-li3.jpg)center/cover; color:#172274; padding: 10px; height: 100%; text-align: center; position: relative;}
+.visa_sev_in a {color: #172274; border: 1px solid #172274; padding: 10px 20px; position: absolute; bottom: 100px; left: 35%;}
+
+
+
+/*sub4-2*/
+.visa_intro {width: 100%; height: 900px; background: url(../img/sub4/visa_intro-main.jpg)center/ cover; background-attachment: fixed; position: relative;}
+.visa_intro h3 { font-size: 70px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
+.visa_intro h4 { font-size: 24px; position: absolute; top: 60%; left: 50%; transform: translateX(-50%); color: #fcb70a; text-align: center;}
+.visa_intro_start {width: 800px; height: 250px; margin: auto; text-align: center; padding-top: 70px;}
+.visa_intro_start h4{font-size: 30px; margin: 20px; font-weight: 400;}
+.visa_intro_start p{margin: 10px; color: #777}
+.intro_mar {width: 1200px; margin: 100px auto; text-align: center;}
+.intro_mar h4{font-size: 30px; font-weight: 300; margin: 20px 0;}
+.intro_mar ul{overflow: hidden;}
+.intro_mar ul li{float: left; width: 23%; padding: 0 10px; border-left: 3px solid #999;}
+.intro_mar ul li:first-child {border: none;}
+
+.intro_his {width: 1200px; height: 700px; margin: 0 auto; overflow: hidden; text-align: center;}
+.intro_his h4{font-size: 30px; margin: 80px 0 10px;}
+.intro_his p{font-size: 18px; margin: 5px 0;}
+.intro_his .intro_his_L{float: right; width: 55%; vertical-align: middle;}
+.intro_his .intro_his_L img{width: 100%;}
+.intro_his .intro_his_Ltxt{float: left; width: 35%; margin-right: 30px;}
+.intro_his .intro_his_Rtxt{float: right; width: 50%;}
+.intro_his .intro_his_Rtxt a{ display: block; width: 30%; color: #fff; background: #172274; margin: 20px auto; padding: 5px 25px;}
+.intro_his .intro_his_R{float:left; width: 45%; vertical-align: middle;}
+.intro_his .intro_his_R img{width: 100%;}
+
+.intro_product {width: 1200px; height: 550px; margin: 100px auto 20px; text-align: center;}
+.intro_product h4{font-size: 30px; margin: 10px 0; font-weight: 300;}
+.intro_product p{font-size: 16px;}
+.intro_product ul{overflow: hidden; margin: 30px 0;}
+.intro_product ul li{float: left; width: 46%; margin: 0 20px;}
+.intro_product ul li img{width: 100%;}
+.intro_product ul li a{font-size: 20px; padding: 10px 0; color: #333; font-weight: 500;}
+.intro_news {width: 600px; margin: 50px auto;}
+.intro_news table {text-align: center; font-size: 18px; width: 500px; margin: 0 auto;}
+.intro_news table thead th{padding: 10px 0; margin: 20px 0; font-size: 20px; border-bottom: 1px solid #333;}
+.intro_news table tbody th{padding: 5px 10px;}
+
